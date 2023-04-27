@@ -5,10 +5,14 @@ function Home() {
   return (
     <div>
       <Head>
-        <title>Tech Dsgn Exp</title>
+        <title>AKE</title>
       </Head>
       <Nav />
-      <h1 className="text-9xl">Tech Design Experiment</h1>
+      <div className="promoCard-wrapper">
+        <promoCard />
+        <promoCard />
+        <promoCard />
+      </div>
     </div>
   );
 }
