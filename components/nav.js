@@ -18,7 +18,7 @@ function Nav() {
         {links.map((x) => (
           <li key={x.id} className="flex px-2 py-1">
             <a className="text-blue-500	no-underline text-sm " href={x.href}>
-              <img src={x.icon} className="items-center mr-6 ml-5" />
+              <img src={x.icon} className="items-center" />
               {""}
             </a>
           </li>
