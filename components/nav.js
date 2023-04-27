@@ -1,22 +1,28 @@
 function Nav() {
   const links = [
-    { id: "id1", label: "Home", href: "/" },
-    { id: "id3", label: "Contact", href: "/contact" },
+    {
+      id: "id1",
+      href: "/",
+      icon: "/img/HAMBURGER.svg",
+    },
+    {
+      id: "id2",
+      href: "/about",
+      icon: "/img/LANGUAGE.svg",
+    },
   ];
 
   return (
-    <nav className="text-center">
+    <nav className="text-center nav-bar">
       <ul className="flex justify-between px-4 my-4 py-1">
-        <img src="/img/Property 1=White ham.svg" />
-        {""}
         {links.map((x) => (
           <li key={x.id} className="flex px-2 py-1">
-            <a className="text-blue-500	no-underline text-sm" href={x.href}>
-              {x.label}
+            <a className="text-blue-500	no-underline text-sm " href={x.href}>
+              <img src={x.icon} className="items-center mr-6 ml-5" />
+              {""}
             </a>
           </li>
         ))}
-        <img src="/img/Property 1=EN WH.svg" />
         {""}
       </ul>
     </nav>

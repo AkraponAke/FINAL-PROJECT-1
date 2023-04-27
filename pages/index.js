@@ -1,20 +1,14 @@
 import Nav from "../components/nav";
 import Head from "next/head";
+import Promo from "../components/Promo";
 
 function Home() {
   return (
     <div>
-      <Head>
-        <title>AKE</title>
-      </Head>
+      <Head></Head>
       <Nav />
-      <div className="promoCard-wrapper">
-        <promoCard />
-        <promoCard />
-        <promoCard />
-      </div>
+      <Promo />
     </div>
   );
 }
-
 export default Home;
