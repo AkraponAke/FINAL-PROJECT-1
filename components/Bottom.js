@@ -1,21 +1,14 @@
 function Bottom() {
-  const size = [
-    {
-      id: "id1",
-      href: "/",
-    },
-    {
-      id: "id2",
-      href: "/about",
-    },
-  ];
-
   return (
-    <Bottom className="bottomBar">
-      gvd
-      <div>gvd</div>
+    <Bottom className="ิbottomBar">
+      <div className="sizeWrap">
+        <div className="sizeBotton">S</div>
+        <div className="sizeBotton">M</div>
+        <div className="sizeBotton">L</div>
+        <div className="sizeBotton">XL</div>
+      </div>
+      <div className="whatSize">WHAT IS MY HAIR SIZE ?</div>
     </Bottom>
   );
 }
-
 export default Bottom;

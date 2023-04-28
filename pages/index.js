@@ -27,8 +27,7 @@ function Home() {
             <FilterButton />
           </dav>
         </dav>
-        /*เรียนถึง 2.52.48*/
-        // เมนูแต่ละ Category //
+        /*เรียนถึง 2.52.48*/ // เมนูแต่ละ Category //
         <MenuCard />
         <MenuCard />
         <MenuCard />
