@@ -1,6 +1,6 @@
 function Bottom() {
   return (
-    <Bottom className="ิbottomBar">
+    <div className="ิbottomBar">
       <div className="sizeWrap">
         <div className="sizeBotton">S</div>
         <div className="sizeBotton">M</div>
@@ -8,7 +8,7 @@ function Bottom() {
         <div className="sizeBotton">XL</div>
       </div>
       <div className="whatSize">WHAT IS MY HAIR SIZE ?</div>
-    </Bottom>
+    </div>
   );
 }
 export default Bottom;
