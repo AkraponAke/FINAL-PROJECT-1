@@ -14,7 +14,6 @@ function Home() {
       <Nav />
       <Promo />
       <dav className="menu-frame">
-        // กล่องเสิร์ช //
         <dav className="searchFilter">
           <Search />
           <dav className="Filter">
@@ -28,6 +27,7 @@ function Home() {
             <FilterButton />
           </dav>
         </dav>
+        /*เรียนถึง 2.52.48*/
         // เมนูแต่ละ Category //
         <MenuCard />
         <MenuCard />
