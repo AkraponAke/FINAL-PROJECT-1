@@ -1,13 +1,13 @@
 function Bottom() {
   return (
-    <div className="ิbottomBar">
+    <div className="bottom">
       <div className="sizeWrap">
-        <div className="sizeBotton h1">S</div>
-        <div className="sizeBotton h1">M</div>
-        <div className="sizeBotton h1">L</div>
-        <div className="sizeBotton h1">XL</div>
+        <div className="sizeBotton h1 text-white	">S</div>
+        <div className="sizeBotton h1 text-white	">M</div>
+        <div className="sizeBotton h1 text-white	">L</div>
+        <div className="sizeBotton h1 text-white	">XL</div>
       </div>
-      <div className="whatSize">WHAT IS MY HAIR SIZE ?</div>
+      <div className="whatSize p2">WHAT IS MY HAIR SIZE ?</div>
     </div>
   );
 }

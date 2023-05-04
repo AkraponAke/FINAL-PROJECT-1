@@ -2,7 +2,7 @@ function Nav() {
   const links = [
     {
       id: "id1",
-      href: "/",
+      href: "/MenuPop",
       icon: "/img/HAMBURGER.svg",
     },
     {

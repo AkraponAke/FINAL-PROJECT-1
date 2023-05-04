@@ -5,7 +5,6 @@ import Promo from "../components/Promo";
 import Menu from "../components/Menu";
 import FilterButton from "../components/FilterButton";
 import Search from "../components/Search";
-import MenuCard from "../components/MenuCard";
 
 function Home() {
   return (
@@ -27,14 +26,14 @@ function Home() {
             <FilterButton />
           </dav>
         </dav>
-        /*เรียนถึง 2.52.48*/ // เมนูแต่ละ Category //
-        <MenuCard />
-        <MenuCard />
-        <MenuCard />
-        <MenuCard />
-        <MenuCard />
-        <MenuCard />
+        <Menu />
+        <Menu />
+        <Menu />
+        <Menu />
+        <Menu />
+        <Menu />
       </dav>
+      / เมนูแต่ละ Category //
       <Bottom />
     </div>
   );
