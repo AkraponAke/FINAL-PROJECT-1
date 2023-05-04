@@ -5,7 +5,6 @@ import Promo from "../components/Promo";
 import Menu from "../components/Menu";
 import FilterButton from "../components/FilterButton";
 import Search from "../components/Search";
-import MenuCard from "../components/MenuCard";
 import PopUp from "../components/PopUp";
 
 function MenuPop() {
