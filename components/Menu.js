@@ -1,28 +1,31 @@
-function Menu() {
+function Menu({ title = "HAIR CUT", listMenu = [], img = "/img/haircut.svg" }) {
+  console.log(listMenu)
   return (
-    <dav className="Menu">
-      <dav className="headingWrap">
-        <dav className="whitebox"></dav>
-        <dav className="heading">
-          <dav className="imgWrap">
-            <dav className="textWrap">
-              <dav className="h1 text-white">HAIR CUT</dav>
-            </dav>
-            <img src="/img/haircut.svg" className="menuImg" />
-          </dav>
-        </dav>
-      </dav>
-      <dav className="listWrap">
-        <dav className="list">
-          <dav>Regular</dav>
-          <dav>600 ฿</dav>
-        </dav>
-        <dav className="list">
-          <dav>Student*</dav>
-          <dav>350 ฿</dav>
-        </dav>
-      </dav>
-    </dav>
+    <div className="Menu">
+      <div className="headingWrap">
+        <div className="whitebox"></div>
+        <div className="heading">
+          <div className="imgWrap">
+            <div className="textWrap">
+              <div className="h1 text-white">{title}</div>
+            </div>
+            <img src={img} className="menuImg" />
+          </div>
+        </div>
+      </div>
+      <div className="listWrap">
+        {/* Loop listMenu */}
+        {listMenu.map((item, i) => {
+          return (
+            <div className="list" key={i}>
+              <div>{item.name}</div>
+              <div>{item.price}</div>
+            </div>
+          )
+        }
+        )}
+      </div>
+    </div>
   );
 }
 export default Menu;

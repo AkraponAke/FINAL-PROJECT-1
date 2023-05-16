@@ -1,9 +1,10 @@
 function PopUp() {
+
   return (
     <div className="PopWrap">
       <div className="PopMenuWrap">
         <a href="/">
-          <img src="/img/HAMBURGER.svg" className="items-center" />
+          <img src="/img/HAMBURGER.svg" className="items-center " />
           {""}
         </a>
         <div className="MenuLink">
