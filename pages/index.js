@@ -165,11 +165,11 @@ function Home() {
           </dav>
         </dav>
         <Menu title="HAIR CUT" listMenu={haircutMenu}/>
-        <Menu title="COLORS" listMenu={colorMenu} img=""/>
-        <Menu title="TEXTURING" listMenu={texturingMenu} img=""/>
-        <Menu title="TREATMENT" listMenu={treatmentMenu} img=""/>
-        <Menu title="STYLING" listMenu={stylingtMenu} img=""/>
-        <Menu title="PRODUCT" listMenu={productMenu} img=""/>
+        <Menu title="COLORS" listMenu={colorMenu} img="/img/color.svg"/>
+        <Menu title="TEXTURING" listMenu={texturingMenu} img="/img/texturing.svg"/>
+        <Menu title="TREATMENT" listMenu={treatmentMenu} img="/img/treatment.svg"/>
+        <Menu title="STYLING" listMenu={stylingtMenu} img="/img/styling.svg"/>
+        <Menu title="PRODUCT" listMenu={productMenu} img="/img/Product.svg"/>
       </dav>
       <Bottom activeMenu="S" />
     </div>

@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'LINESeedSansTH_W_Rg';
+    src: url('../public/font/LINESeedSansTH_W_Rg.eot');
+    src: url('../public/font/LINESeedSansTH_W_Rg.eot?#iefix') format('embedded-opentype'),
+         url('../public/font/LINESeedSansTH_W_Rg.woff2') format('woff2'),
+         url('../public/font/LINESeedSansTH_W_Rg.woff') format('woff'),;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LINESeedSansTH_W_Bd';
+    src: url('../public/font/LINESeedSansTH_W_Bd.eot');
+    src: url('../public/font/LINESeedSansTH_W_Bd.eot?#iefix') format('embedded-opentype'),
+         url('../public/font/LINESeedSansTH_W_Bd.woff2') format('woff2'),
+         url('../public/font/LINESeedSansTH_W_Bd.woff') format('woff'),;
+    font-weight: normal;
+    font-style: normal;
+} 
+
 body {
   background-image: url("/img/mainBG.svg");
   background-size: cover;
@@ -10,6 +30,7 @@ body {
 /* Set text style */
 /* Heading Style */
 .h1 {
+  font-family: "LINESeedSansTH_W_Bd";
   font-size: 40px;
   font-weight: bold;
 }
@@ -389,7 +410,6 @@ body {
 
 .menuImg {
   width: 116px;
-  height: 116px;
   flex: none;
   order: 0;
   flex-grow: 0;
