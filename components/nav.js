@@ -7,10 +7,15 @@ function Nav() {
 
   //Create Popup active state
   const [popupActive, setPopupActive] = useState(false);
+  const [popupInActive, setPopupInActive] = useState(true);
 
   //Create function to toggle popup
   function togglePopup() {
     setPopupActive(!popupActive);
+  }
+  
+  function closePopup() {
+    setPopupInActive(!popupInActive);
   }
 
   const linkLanguage = {

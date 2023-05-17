@@ -30,7 +30,7 @@ body {
 /* Set text style */
 /* Heading Style */
 .h1 {
-  font-family: "LINESeedSansTH_W_Bd";
+  /*font-family: "LINESeedSansTH_W_Bd";*/
   font-size: 40px;
   font-weight: bold;
 }
@@ -78,6 +78,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 
 .promo-wrapper {
@@ -240,7 +241,7 @@ body {
   /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 20px;
-  z-index: 99;
+  z-index: 50;
   border-width: 2px;
   border-color: radial-gradient(#ff9f24, #fff7e7);
 }
@@ -537,7 +538,7 @@ body {
   /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 0px 15px 0px 15px;
-  z-index: 100;
+  z-index: 80;
 }
 
 .PopMenuWrap {

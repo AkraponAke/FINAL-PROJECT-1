@@ -1,12 +1,34 @@
+import { useState } from "react";
+
+  
+
 function PopUp() {
+  //Create Popup active state
+  const [popupActive, setPopupActive] = useState(false);
+  const [popupInActive, setPopupInActive] = useState(true);
+
+  //Create function to toggle popup
+  function togglePopup() {
+    setPopupActive(!popupActive);
+  }
+  
+  function closePopup() {
+    setPopupInActive(!popupInActive);
+  }
+  
 
   return (
     <div className="PopWrap">
+      {popupInActive && <PopUp />}
       <div className="PopMenuWrap">
-        <a href="/">
-          <img src="/img/HAMBURGER.svg" className="items-center " />
-          {""}
-        </a>
+        
+        <li className="flex px-2 py-1 ">
+          {/* Click then run togglePopup function */}
+          <div className="text-blue-500	no-underline text-sm " onClick={closePopup}>
+            <img src="/img/HAMBURGER.svg" className="items-center" />
+          </div>
+        </li>
+        
         <div className="MenuLink">
           <a className="h3 text-white" href="/">
             MENU
