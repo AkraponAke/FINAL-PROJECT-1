@@ -1,8 +1,6 @@
 import PopUp from "@/components/PopUp";
 import { useState } from "react";
 
-
-
 function Nav() {
 
   //Create Popup active state

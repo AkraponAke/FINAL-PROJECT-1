@@ -1,10 +1,10 @@
-function NameCard() {
+function NameCard({ title = "POINT", img = "/img/POINT.svg" }) {
   return (
     <div className="team-card">
       <div className="team-pic-wrap">
-        <img src="/img/POINT.svg" className="team-pic rounded-xl	" />
+        <img src={img} className="team-pic rounded-xl	" />
       </div>
-      <div class="nameBox h5">POINT</div>
+      <div class="nameBox h5">{title}</div>
     </div>
   );
 }
