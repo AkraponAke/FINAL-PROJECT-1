@@ -7,16 +7,13 @@ function Nav() {
 
   //Create Popup active state
   const [popupActive, setPopupActive] = useState(false);
-  const [popupInActive, setPopupInActive] = useState(true);
 
   //Create function to toggle popup
   function togglePopup() {
     setPopupActive(!popupActive);
   }
-  
-  function closePopup() {
-    setPopupInActive(!popupInActive);
-  }
+
+
 
   const linkLanguage = {
     id: "id2",
@@ -26,7 +23,7 @@ function Nav() {
 
 
   return (
-    <nav className="text-center nav-bar">
+    <nav className="text-center nav-bar z-100">
       {popupActive && <PopUp />}
       <ul className="flex justify-between px-4 my-4 py-1">
 
@@ -39,7 +36,7 @@ function Nav() {
 
         <li key={linkLanguage.id} className="flex px-2 py-1">
           <a className="text-blue-500	no-underline text-sm " href={linkLanguage.href}>
-            <img src={linkLanguage.icon} className="items-center " />
+            <img src={linkLanguage.icon} className="items-center" />
           </a>
         </li>
 
@@ -50,4 +47,3 @@ function Nav() {
 }
 
 export default Nav;
-

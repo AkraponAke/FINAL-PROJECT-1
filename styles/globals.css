@@ -82,7 +82,7 @@ body {
 }
 
 .promo-wrapper {
-  max-width: 100vw;
+  max-width: 100vw; 
   overflow: auto;
   display: flex;
   flex-direction: row;
